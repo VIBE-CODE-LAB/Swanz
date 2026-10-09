@@ -11,45 +11,57 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <p class="announce">Explore the new collection · Follow us on Instagram @swanz</p>
-
-  <header class="site-header">
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span>
-    </button>
-    <a href="#top" class="logo" aria-label="Swanz home">Swanz</a>
-    <nav id="nav" class="nav" aria-label="Primary">
-      <a href="#collection">Shop</a>
-      <a href="#categories">Categories</a>
-      <a href="#story">Our Story</a>
-      <a href="#instagram">Instagram</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="header-cta" href="https://www.instagram.com/" target="_blank" rel="noopener">Follow</a>
-  </header>
-
   <main id="top">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">The Signature Edit</p>
-        <h1>Classic grace,<br>worn close.</h1>
-        <p class="lede">Quietly luxurious innerwear in warm pearl, dusty nude and deep cocoa — cut to feel as good as it looks.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#collection">Explore the collection</a>
-          <a class="btn btn-ghost" href="#story">Our story</a>
+    <!-- HERO BANNERS -->
+    <section class="hero" aria-roledescription="carousel" aria-label="Featured">
+      <div class="slide is-active tone-pearl">
+        <div class="slide-copy">
+          <p class="eyebrow">The Signature Edit</p>
+          <h1>Classic grace,<br>worn close.</h1>
+          <p class="lede">Quietly luxurious innerwear in warm pearl, dusty nude and deep cocoa, cut to feel as good as it looks.</p>
+          <a class="btn" href="shop.html">Shop the collection</a>
+        </div>
+        <div class="arches">
+          <figure class="arch"><img src="assets/site/hero-1.jpg" alt="Swanz printed bra" fetchpriority="high"></figure>
+          <figure class="arch"><img src="assets/site/hero-2.jpg" alt="Swanz seamless bralette" fetchpriority="high"></figure>
+          <figure class="arch"><img src="assets/site/cat-panties.jpg" alt="Swanz boyshort panty"></figure>
         </div>
       </div>
-      <div class="hero-art">
-        <figure class="hero-panel p1"><img src="assets/site/hero-1.jpg" alt="Swanz printed collection" fetchpriority="high"></figure>
-        <figure class="hero-panel p2"><img src="assets/site/hero-2.jpg" alt="Swanz seamless bralette" fetchpriority="high"></figure>
-        <span class="hero-tag">The Collection</span>
+      <div class="slide tone-nude" aria-hidden="true">
+        <div class="slide-copy">
+          <p class="eyebrow">New · Printed Collection</p>
+          <h2 class="display">Prints with<br>a point of view.</h2>
+          <p class="lede">Florals, leaves and polka dots on supportive padded cups. Softly bold, never loud.</p>
+          <a class="btn" href="shop.html?cat=Printed" tabindex="-1">Explore prints</a>
+        </div>
+        <div class="arches">
+          <figure class="arch"><img src="assets/p/is-51754-midnight-floral-printed-bra/midnight-floral-2.jpg" alt="Midnight floral printed bra" loading="lazy"></figure>
+          <figure class="arch"><img src="assets/p/is-59925-blossom-printed-bra/blossom-2.jpg" alt="Blossom printed bra" loading="lazy"></figure>
+          <figure class="arch"><img src="assets/p/is-59927-sky-leaf-printed-bra/sky-leaf-2.jpg" alt="Sky leaf printed bra" loading="lazy"></figure>
+        </div>
+      </div>
+      <div class="slide tone-cocoa" aria-hidden="true">
+        <div class="slide-copy">
+          <p class="eyebrow">Everyday Essentials</p>
+          <h2 class="display">Your shade,<br>your softest layer.</h2>
+          <p class="lede">Wire-free comfort and smooth T-shirt cups in a range of true nudes.</p>
+          <a class="btn btn-light" href="shop.html?cat=Bras" tabindex="-1">Shop bras</a>
+        </div>
+        <div class="arches">
+          <figure class="arch"><img src="assets/p/everyday-wire-free-bra/skin-2.jpg" alt="Everyday wire-free bra" loading="lazy"></figure>
+          <figure class="arch"><img src="assets/p/classic-t-shirt-bra/skin-2.jpg" alt="Classic T-shirt bra" loading="lazy"></figure>
+          <figure class="arch"><img src="assets/p/smooth-contour-bra/skin-2.jpg" alt="Smooth contour bra" loading="lazy"></figure>
+        </div>
+      </div>
+      <div class="hero-dots" role="tablist" aria-label="Choose banner">
+        <button class="is-active" aria-label="Banner 1"></button>
+        <button aria-label="Banner 2"></button>
+        <button aria-label="Banner 3"></button>
       </div>
     </section>
 
-    <!-- ASSURANCES -->
+    <!-- PROMISES TICKER -->
     <div class="assure" aria-label="Brand promises">
       <ul class="assure-track">
         <li><strong>Skin-kind fabrics</strong><span>Soft, breathable, tested for all-day wear</span></li>
@@ -70,38 +82,69 @@
         <h2>Find your fit</h2>
       </header>
       <div class="cat-grid">
-        <a href="#collection" class="cat" data-filter="Bras"><img src="assets/site/cat-bras.jpg" alt="" loading="lazy"><span>Bras</span></a>
-        <a href="#collection" class="cat" data-filter="Bralettes"><img src="assets/site/cat-bralettes.jpg" alt="" loading="lazy"><span>Bralettes</span></a>
-        <a href="#collection" class="cat" data-filter="Printed"><img src="assets/site/cat-printed.jpg" alt="" loading="lazy"><span>Printed</span></a>
-        <a href="#collection" class="cat" data-filter="Panties"><img src="assets/site/cat-panties.jpg" alt="" loading="lazy"><span>Panties</span></a>
+        <a href="shop.html?cat=Bras" class="cat"><img src="assets/site/cat-bras.jpg" alt="" loading="lazy"><span>Bras</span></a>
+        <a href="shop.html?cat=Bralettes" class="cat"><img src="assets/site/cat-bralettes.jpg" alt="" loading="lazy"><span>Bralettes</span></a>
+        <a href="shop.html?cat=Printed" class="cat"><img src="assets/site/cat-printed.jpg" alt="" loading="lazy"><span>Printed</span></a>
+        <a href="shop.html?cat=Panties" class="cat"><img src="assets/site/cat-panties.jpg" alt="" loading="lazy"><span>Panties</span></a>
       </div>
     </section>
 
-    <!-- COLLECTION -->
-    <section class="section" id="collection">
+    <!-- BEST SELLERS -->
+    <section class="section section-tight" id="bestsellers">
       <header class="section-head">
-        <p class="eyebrow">The collection</p>
-        <h2>Our favourites</h2>
+        <p class="eyebrow">Most loved</p>
+        <h2>Best sellers</h2>
       </header>
-      <div class="filters" role="tablist" aria-label="Filter products">
-        <button class="chip is-active" data-filter="All">All</button>
-        <button class="chip" data-filter="Bras">Bras</button>
-        <button class="chip" data-filter="Bralettes">Bralettes</button>
-        <button class="chip" data-filter="Printed">Printed</button>
-        <button class="chip" data-filter="Panties">Panties</button>
-        </div>
-      <div class="product-grid" id="productGrid"></div>
+      <div class="product-grid four" id="bestGrid"></div>
+      <p class="center"><a class="btn btn-ghost" href="shop.html">View all products</a></p>
+    </section>
+
+    <!-- COLLECTION BANNER -->
+    <section class="banner banner-cocoa">
+      <div class="banner-copy">
+        <p class="eyebrow">The Printed Collection</p>
+        <h2>Ten prints.<br>One quiet statement.</h2>
+        <p>From midnight florals to sky-blue leaves: padded, supportive and made for everyday.</p>
+        <a class="btn btn-light" href="shop.html?cat=Printed">Explore the collection</a>
+      </div>
+      <div class="banner-mosaic">
+        <figure><img src="assets/p/is-51752-navy-polka-printed-bra/navy-polka-2.jpg" alt="Navy polka printed bra" loading="lazy"></figure>
+        <figure><img src="assets/p/is-59951-coral-bloom-printed-bra/coral-bloom-3.jpg" alt="Coral bloom printed bra" loading="lazy"></figure>
+        <figure><img src="assets/p/is-59953-blue-leaf-printed-bra/blue-leaf-2.jpg" alt="Blue leaf printed bra" loading="lazy"></figure>
+      </div>
     </section>
 
     <!-- STORY -->
     <section class="story" id="story">
-      <div class="story-art"><img src="assets/site/story.jpg" alt="Swanz" loading="lazy"></div>
+      <div class="story-art">
+        <figure><img src="assets/site/story.jpg" alt="Swanz" loading="lazy"></figure>
+        <figure><img src="assets/p/seamless-comfort-bralette/fawn-1.jpg" alt="Swanz bralette" loading="lazy"></figure>
+      </div>
       <div class="story-copy">
         <p class="eyebrow">Our story</p>
         <h2>Premium, without the performance.</h2>
-        <p>Swanz was made for women who prefer elegance that doesn't announce itself. Every piece is drawn in a restrained palette — pearl, nude, cocoa — and finished with the kind of detail you feel before you see.</p>
-        <p>This site is a window into the collection. To follow new drops and behind-the-scenes, find us on Instagram.</p>
-        <a class="btn" href="#instagram">See us on Instagram</a>
+        <p>Swanz was made for women who prefer elegance that doesn't announce itself. Every piece is drawn in a restrained palette of pearl, nude and cocoa, and finished with the kind of detail you feel before you see.</p>
+        <ul class="values">
+          <li><strong>Softness first</strong><span>Fabrics chosen for how they feel at hour twelve.</span></li>
+          <li><strong>Quiet colour</strong><span>Shades that sit beautifully under anything.</span></li>
+          <li><strong>Made to last</strong><span>Shape and comfort that survive the wash.</span></li>
+        </ul>
+        <a class="btn" href="shop.html">Discover the collection</a>
+      </div>
+    </section>
+
+    <!-- PANTY BANNER -->
+    <section class="banner banner-pearl">
+      <div class="flats">
+        <figure><img src="assets/site/flat-coral.jpg" alt="Coral boyshorts" loading="lazy"></figure>
+        <figure><img src="assets/site/flat-wine.jpg" alt="Wine boyshorts" loading="lazy"></figure>
+        <figure><img src="assets/site/flat-navy.jpg" alt="Navy boyshorts" loading="lazy"></figure>
+      </div>
+      <div class="banner-copy">
+        <p class="eyebrow">Panty Essentials</p>
+        <h2>Comfort, in threes.</h2>
+        <p>Soft stretch boyshorts with a no-ride leg, in six easy colours and sold as a pack of three.</p>
+        <a class="btn" href="shop.html?cat=Panties">Shop panties</a>
       </div>
     </section>
 
@@ -117,45 +160,8 @@
 
   </main>
 
-  <footer class="footer" id="contact">
-    <div class="footer-brand">
-      <a href="#top" class="logo">Swanz</a>
-      <p>Classic premium grace.</p>
-    </div>
-    <div>
-      <h3>Explore</h3>
-      <a href="#collection">Shop</a>
-      <a href="#categories">Categories</a>
-      <a href="#story">Our Story</a>
-    </div>
-    <div>
-      <h3>Connect</h3>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="mailto:hello@swanz.example">hello@swanz.example</a>
-    </div>
-    <p class="legal">© <span id="yr"></span> Swanz. Showcase site — products are shown for viewing only.</p>
-  </footer>
-
-  <!-- QUICK VIEW -->
-  <div class="modal" id="modal" hidden>
-    <div class="modal-backdrop" data-close></div>
-    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-      <button class="modal-close" data-close aria-label="Close">&times;</button>
-      <div class="modal-media"><img id="mImg" alt=""><div class="thumbs" id="mThumbs"></div></div>
-      <div class="modal-body">
-        <p class="eyebrow" id="mCat"></p>
-        <h3 id="mTitle"></h3>
-        <p class="code" id="mCode"></p>
-        <p id="mDesc"></p>
-        <h4>Colour · <span id="mColor"></span></h4>
-        <div class="swatches" id="mSwatches"></div>
-        <ul class="details" id="mDetails"></ul>
-        <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Enquire on Instagram</a>
-      </div>
-    </article>
-  </div>
-
   <script src="assets/data.js"></script>
-  <script src="script.js"></script>
+  <script src="shared.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>

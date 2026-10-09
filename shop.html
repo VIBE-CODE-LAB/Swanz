@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — Swanz</title>
+  <meta name="description" content="Browse the full Swanz collection: bras, bralettes, printed bras and panties.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="section shop-head">
+      <p class="eyebrow">The collection</p>
+      <h1 id="shopTitle" class="h2">Shop all</h1>
+      <p class="muted" id="count"></p>
+      <div class="filters" aria-label="Filter products">
+        <button class="chip is-active" data-filter="All">All</button>
+        <button class="chip" data-filter="Bras">Bras</button>
+        <button class="chip" data-filter="Bralettes">Bralettes</button>
+        <button class="chip" data-filter="Printed">Printed</button>
+        <button class="chip" data-filter="Panties">Panties</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="shared.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>
