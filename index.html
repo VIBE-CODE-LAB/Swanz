@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swanz — Classic Premium Grace</title>
+  <meta name="description" content="Swanz — considered innerwear in warm pearl, dusty nude and cocoa. Explore the collection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <p class="announce">Explore the new collection · Follow us on Instagram @swanz</p>
+
+  <header class="site-header">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+    <a href="#top" class="logo" aria-label="Swanz home">Swanz</a>
+    <nav id="nav" class="nav" aria-label="Primary">
+      <a href="#collection">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#story">Our Story</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="https://www.instagram.com/" target="_blank" rel="noopener">Follow</a>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">The Signature Edit</p>
+        <h1>Classic grace,<br>worn close.</h1>
+        <p class="lede">Quietly luxurious innerwear in warm pearl, dusty nude and deep cocoa — cut to feel as good as it looks.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#collection">Explore the collection</a>
+          <a class="btn btn-ghost" href="#story">Our story</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <figure class="hero-panel p1"><img src="assets/site/hero-1.jpg" alt="Swanz printed collection" fetchpriority="high"></figure>
+        <figure class="hero-panel p2"><img src="assets/site/hero-2.jpg" alt="Swanz seamless bralette" fetchpriority="high"></figure>
+        <span class="hero-tag">The Collection</span>
+      </div>
+    </section>
+
+    <!-- ASSURANCES -->
+    <ul class="assure" aria-label="Brand promises">
+      <li><strong>Skin-kind fabrics</strong><span>Soft, breathable, tested for all-day wear</span></li>
+      <li><strong>True-to-size fits</strong><span>Wide size range in every style</span></li>
+      <li><strong>Seamless finish</strong><span>Invisible under everyday clothing</span></li>
+      <li><strong>Made to last</strong><span>Holds shape wash after wash</span></li>
+    </ul>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories">
+      <header class="section-head">
+        <p class="eyebrow">Shop by category</p>
+        <h2>Find your fit</h2>
+      </header>
+      <div class="cat-grid">
+        <a href="#collection" class="cat" data-filter="Bras"><img src="assets/site/cat-bras.jpg" alt="" loading="lazy"><span>Bras</span></a>
+        <a href="#collection" class="cat" data-filter="Bralettes"><img src="assets/site/cat-bralettes.jpg" alt="" loading="lazy"><span>Bralettes</span></a>
+        <a href="#collection" class="cat" data-filter="Printed"><img src="assets/site/cat-printed.jpg" alt="" loading="lazy"><span>Printed</span></a>
+        <a href="#collection" class="cat" data-filter="Panties"><img src="assets/site/cat-panties.jpg" alt="" loading="lazy"><span>Panties</span></a>
+      </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="section" id="collection">
+      <header class="section-head">
+        <p class="eyebrow">The collection</p>
+        <h2>Our favourites</h2>
+      </header>
+      <div class="filters" role="tablist" aria-label="Filter products">
+        <button class="chip is-active" data-filter="All">All</button>
+        <button class="chip" data-filter="Bras">Bras</button>
+        <button class="chip" data-filter="Bralettes">Bralettes</button>
+        <button class="chip" data-filter="Printed">Printed</button>
+        <button class="chip" data-filter="Panties">Panties</button>
+        </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="story">
+      <div class="story-art"><img src="assets/site/story.jpg" alt="Swanz" loading="lazy"></div>
+      <div class="story-copy">
+        <p class="eyebrow">Our story</p>
+        <h2>Premium, without the performance.</h2>
+        <p>Swanz was made for women who prefer elegance that doesn't announce itself. Every piece is drawn in a restrained palette — pearl, nude, cocoa — and finished with the kind of detail you feel before you see.</p>
+        <p>This site is a window into the collection. To follow new drops and behind-the-scenes, find us on Instagram.</p>
+        <a class="btn" href="#instagram">See us on Instagram</a>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="section" id="instagram">
+      <header class="section-head">
+        <p class="eyebrow">@swanz</p>
+        <h2>On Instagram</h2>
+      </header>
+      <div class="insta-grid" id="instaGrid"></div>
+      <p class="center"><a class="btn btn-ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">Follow @swanz</a></p>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-brand">
+      <a href="#top" class="logo">Swanz</a>
+      <p>Classic premium grace.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <a href="#collection">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#story">Our Story</a>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:hello@swanz.example">hello@swanz.example</a>
+    </div>
+    <p class="legal">© <span id="yr"></span> Swanz. Showcase site — products are shown for viewing only.</p>
+  </footer>
+
+  <!-- QUICK VIEW -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+      <div class="modal-media"><img id="mImg" alt=""><div class="thumbs" id="mThumbs"></div></div>
+      <div class="modal-body">
+        <p class="eyebrow" id="mCat"></p>
+        <h3 id="mTitle"></h3>
+        <p class="code" id="mCode"></p>
+        <p id="mDesc"></p>
+        <h4>Colour · <span id="mColor"></span></h4>
+        <div class="swatches" id="mSwatches"></div>
+        <ul class="details" id="mDetails"></ul>
+        <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Enquire on Instagram</a>
+      </div>
+    </article>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
