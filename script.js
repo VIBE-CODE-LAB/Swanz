@@ -1,5 +1,8 @@
 // Swanz showcase — renders products from assets/data.js (generated from the product photo folders).
-const { products: PRODUCTS } = window.SWANZ;
+const { products: ALL } = window.SWANZ;
+// Front page shows 12 products (4 rows of 3 on desktop); the rest stay in assets/data.js.
+const FEATURED = [1, 2, 3, 4, 5, 6, 7, 18, 8, 9, 11, 13];
+const PRODUCTS = FEATURED.map(id => ALL.find(p => p.id === id));
 
 // ---- Product grid ----
 const grid = document.getElementById("productGrid");
@@ -89,7 +92,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape" && !modal.hid
 // ---- Instagram strip: a mix of product photos ----
 const picks = [[10, 1], [5, 1], [14, 1], [1, 1], [18, 1], [8, 1]]; // [product id, image index]
 $("instaGrid").innerHTML = picks.map(([id, n]) => {
-  const p = PRODUCTS.find(x => x.id === id);
+  const p = ALL.find(x => x.id === id);
   const imgs = p.variants[0].images;
   return `<a class="insta" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="${p.name} on Instagram"><img src="${imgs[n] || imgs[0]}" alt="${p.name}" loading="lazy"></a>`;
 }).join("");
